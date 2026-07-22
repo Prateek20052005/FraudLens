@@ -227,9 +227,3 @@ This section is deliberate. These are understood tradeoffs and open items, not u
 | SHAP is computed on every request | Explanation dominates request latency relative to the prediction itself | Compute explanations only for MEDIUM/HIGH scores, or return them asynchronously |
 | Single-process deployment | No horizontal scaling story yet | Containerize API and dashboard separately; scale the stateless API behind a load balancer |
 | No automated tests or CI | Regressions are not caught | Unit tests for the feature pipeline, contract tests for the API, GitHub Actions pipeline |
-
----
-
-## License
-
-MIT
